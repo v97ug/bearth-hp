@@ -79,28 +79,44 @@ nav li:hover {
 }
 
 nav li:nth-of-type(1) {
-    color: #76BD48;
     border-bottom-color: #76BD48;
 }
 
+nav li:nth-of-type(1) a {
+    color: #76BD48;
+}
+
 nav li:nth-of-type(2) {
-    color: #3797F2;
     border-bottom-color: #3797F2;
 }
 
+nav li:nth-of-type(2) a{
+    color: #3797F2;
+
+}
+
 nav li:nth-of-type(3) {
-    color: #FAA62F;
     border-bottom-color: #FAA62F;
 }
 
+nav li:nth-of-type(3) a {
+    color: #FAA62F;
+}
+
 nav li:nth-of-type(4) {
-    color: #9281B4;
     border-bottom-color: #9281B4;
 }
 
+nav li:nth-of-type(4) a {
+    color: #9281B4;
+}
+
 nav li:nth-of-type(5) {
-    color: #FE6D63;
     border-bottom-color: #FE6D63;
+}
+
+nav li:nth-of-type(5) a {
+    color: #FE6D63;
 }
 
 .top-img-container {
