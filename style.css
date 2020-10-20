@@ -19,7 +19,7 @@ li {
     list-style: none;
 }
 
-header {
+header, .container {
     padding-left: var(--side-padding);
     padding-right: var(--side-padding);
 }
@@ -111,7 +111,7 @@ nav li:nth-of-type(5) {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background: rgba(108,192,78,0.08);
+    background: rgba(108, 192, 78, 0.08);
 }
 
 .top-img {
@@ -122,6 +122,145 @@ nav li:nth-of-type(5) {
 
 .nav-btn {
     display: none;
+}
+
+main, aside {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.16);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+
+main {
+    width: 75%;
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+main > section {
+    margin-bottom: 30px;
+}
+
+aside {
+    padding: 20px 15px;
+    width: 22%;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.3em;
+    border-left-width: 5px;
+    border-left-style: solid;
+    padding: 4px 10px;
+}
+
+h1#mission {
+    border-left-color: #76BD48;
+}
+
+h1#sdgs-activity {
+    border-left-color: #3797F2;
+}
+
+h1#member {
+    border-left-color: #FAA62F;
+}
+
+h1#career {
+    border-left-color: #9281B4;
+}
+
+h1#activities {
+    border-left-color: #FE6D63;
+}
+
+p.mission-statement {
+    background: rgba(108, 192, 78, 0.08);
+    color: #039C6D;
+    --p-padding: 25px;
+    padding-top: var(--p-padding);
+    padding-bottom: var(--p-padding);
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.mission-step {
+    background: url(img/gray-stripe.png);
+    background-size: 15px 15px;
+    border: 3px solid #318BBE;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.mission-step .step-area {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mission-step .step-area > div:nth-of-type(1), .mission-step > div:nth-of-type(2) {
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.mission-step .description {
+    font-size: 1.3em;
+}
+
+.description .minus {
+    color: #1E65A5;
+    font-weight: bold;
+}
+
+.description .zero {
+    font-weight: bold;
+}
+
+.description .plus {
+    color: #FE6D63;
+    font-weight: bold;
+}
+
+.mission-step button {
+    background: #035FA8;
+    border: none;
+    border-bottom: 3px solid #055392;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 25px;
+    font-size: 1.05em;
+    margin-left: 30px;
+}
+
+.step-area p {
+    margin-left: 20px;
+    font-size: 1.2em;
+}
+
+.slash {
+    height: 70px;
+    border-left: 4px solid #000;
+    transform: skew(-40deg);
+}
+
+.step {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.step b {
+    font-size: 1.2em;
+}
+
+aside img {
+    margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
@@ -197,8 +336,31 @@ nav li:nth-of-type(5) {
         width: 35%;
     }
 
-    .open .nav-btn {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .step-area img {
+        width: 50%;
+    }
+
+    .step-area {
+        font-size: 0.7em;
+    }
+
+    .mission-step .step-area:not(:last-of-type) {
+        border-bottom: 1px solid #318BBE;
+        padding-bottom: 15px;
 
     }
 
+    .step-area button {
+        padding: 5px 10px;
+    }
+
+    main, aside {
+        width: 95%;
+    }
 }
