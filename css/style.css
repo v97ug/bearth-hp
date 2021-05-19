@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    line-height: 1.6;
 }
 
 a {
@@ -132,7 +133,7 @@ nav li:nth-of-type(5) a {
 
 .top-img {
     height: 100%;
-    background: url(img/top.jpg) no-repeat center;
+    background: url(../img/top.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -253,6 +254,11 @@ p.mission-statement {
     padding: 10px 25px;
     font-size: 1.05em;
     margin-left: 30px;
+    transition: 0.15s;
+}
+
+.mission-step button:hover {
+    opacity: 0.8;
 }
 
 .step-area p {
@@ -312,6 +318,25 @@ footer .copyright {
     padding-top: 5px;
     padding-bottom: 5px;
     text-align:center;
+}
+
+.green-large {
+    /*color: #039C6D;*/
+    color: #75bd48;
+    /*font-weight: bold;*/
+    font-size: 1.6em;
+}
+
+.blue-large {
+    color: #3797F2;
+    /*font-weight: bold;*/
+    font-size: 1.6em;
+}
+
+.member-item {
+    margin: 30px auto;
+    padding: 2px 15px;
+    border: 1px solid #FAA62F;
 }
 
 @media (max-width: 768px) {
@@ -425,5 +450,11 @@ footer .copyright {
     footer .company-info .sns-area {
         margin-top: 10px;
         margin-left: 0;
+    }
+}
+
+@media (min-width: 769px) {
+    .pc-none {
+        display: none;
     }
 }

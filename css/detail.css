@@ -1,0 +1,41 @@
+.undp-area {
+    white-space: pre-line;
+    text-align: center;
+}
+
+.undp-area.blue {
+    background: #ebf9ff;
+}
+
+.undp-area.red {
+    background: #fff2f2;
+}
+
+.undp-area .step1-large,
+.undp-area .step2-large {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.undp-area .step1-large {
+    color: #035FA8;
+}
+
+.undp-area .step2-large {
+    color: #FE6D63;
+}
+
+.undp-area button {
+    background: #035FA8;
+    border: none;
+    border-bottom: 3px solid #055392;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 25px;
+    font-size: 1.05em;
+    transition: 0.15s;
+}
+
+.undp-area button:hover {
+    opacity: 0.8;
+}
